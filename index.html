@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>FlashMall</title>
+  <script type="module" crossorigin src="./static/js/index-8df1d5de.js"></script>
+  <link rel="stylesheet" href="./static/css/style-3e6e7e98.css">
+</head>
+
+<body class="sm:h-full sm:flex sm:justify--center">
+  <div id="app"
+    class="relative sm:w-[375px] w-full m-auto sm:h-[90%] lg:h-[80%] h-full overflow-hidden md:rounded-xl select-none bg-gradient-to-b from-color1/[1] to-color2 text-sm font-Sans font-medium">
+  </div>
+  
+  <script>
+    // 初始化vConsole
+    const initVConsole = () => {
+      window.vConsole = new window.VConsole({
+        defaultPlugins: ['system', 'network', 'element', 'storage'], // 可以在此设定要默认加载的面板
+        maxLogNumber: 1000,
+        // disableLogScrolling: true,
+        onReady: () => {
+          console.log('vConsole: onReady');
+        },
+        onClearLog: () => {
+          console.log('vConsole: onClearLog');
+        }
+      });
+      console.info('欢迎使用 vConsole。vConsole 是一个由微信前端团队研发的 Web 前端开发者面板，可用于展示 console 日志，方便开发、调试。');
+    };
+    // 引入vConsole的JS库
+    const loadVConsole = () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const v = urlParams.get('v') || 'latest';
+      const script = document.createElement('SCRIPT');
+      script.src = `https://unpkg.com/vconsole@${v}/dist/vconsole.min.js`;
+      script.onload = initVConsole;
+      document.body.append(script);
+    };
+    // loadVConsole();
+
+  </script>
+  <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+  <script>
+    var exports = {}
+    global = globalThis
+    document.addEventListener('touchstart', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault()
+      }
+    })
+    var lastTouchEnd = 0
+    document.addEventListener(
+      'touchend',
+      function (event) {
+        var now = new Date().getTime()
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault()
+        }
+        lastTouchEnd = now
+      },
+      false
+    )
+  </script>
+</body>
+
+</html>
