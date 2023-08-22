@@ -1,0 +1,1 @@
+import{U as t,u as o}from"./index-c3baa0c4.js";const n=e=>{const{accountStore:r}=o(),s=e||r.sign.address;return t("GET","/store/getStoreInfo?address="+s,"",!1)},u=e=>t("GET","/store/getDetail?id="+e,"",!1),c=e=>t("POST","/store/save",e),d=e=>t("POST","/store/setMerchant",e);export{n as a,c as b,d as c,u as q};
