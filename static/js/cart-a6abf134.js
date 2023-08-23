@@ -1,0 +1,1 @@
+import{z as a,U as e}from"./index-e87e19e8.js";const s=r=>(a().getCurrentAccount(),e("GET","/cart/getCart","")),o=(r,t=1)=>e("POST","/cart/add",{goodsId:r,number:t}),d=r=>e("POST",`/cart/remove?goodsIds=${r}`,""),u=r=>e("POST","/cart/modifyNumber",r),n=r=>e("POST",`/cart/checked?checked=1&goodsIds=${r}`,{checked:1,goodsIds:r});export{s as a,n as b,u as c,d,o as q};
