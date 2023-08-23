@@ -1,1 +1,0 @@
-import{U as s}from"./index-c3baa0c4.js";const o=t=>s("GET","/goods/getDetail?id="+t,"",!1),r=t=>s("POST","/goods/save",t),a=t=>s("POST",`/goods/listing?id=${t.id}&status=${t.status}`,""),d=t=>s("POST",`/goods/deleteDraft?id=${t}`,{id:t});export{d as a,o as b,r as c,a as q};

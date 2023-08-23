@@ -1,0 +1,1 @@
+import{A as e,a as o}from"./index-dd2b66f1.js";const a=()=>{const{t:r}=e();return o({"-1":r("order.all"),0:r("order.waitBlock"),1:r("order.wait"),2:r("order.already"),3:r("order.fail"),4:r("order.completed"),5:r("order.close")})};export{a as u};
