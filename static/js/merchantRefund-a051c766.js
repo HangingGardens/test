@@ -1,1 +1,0 @@
-import{_ as e,d as n,e as a,b as r}from"./index-e87e19e8.js";const t=n({setup(s){return(c,o)=>(r(),a("div",null," merchantRefund "))}}),u=e(t,[["__file","/Users/wangkeai/work/xueyan/mai/flashmall-dapp/src/view/refund/merchantRefund.vue"]]);export{u as default};
