@@ -1,1 +1,0 @@
-import{z as r,U as t}from"./index-85d13ebb.js";r().getCurrentAccount();const n=()=>t("GET","/points/getUserContributes",""),o=e=>t("POST",`/points/contributeRelease?type=${e}`,{type:e});export{n as a,o as q};
