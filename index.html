@@ -1,1 +1,70 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,user-scalable=0,viewport-fit=cover"><link rel="icon" href="favicon.ico"><title>metabill</title><link href="css/chunk-1ef597d7.c33f3cf5.css" rel="prefetch"><link href="css/chunk-2551be6e.f692978f.css" rel="prefetch"><link href="css/chunk-3c859ab0.d1aa7d0b.css" rel="prefetch"><link href="css/chunk-3c97ad09.0d8f4970.css" rel="prefetch"><link href="css/chunk-566c52d6.e03b8fdb.css" rel="prefetch"><link href="css/chunk-58d3fd58.fe62933e.css" rel="prefetch"><link href="css/chunk-5f32e078.46586434.css" rel="prefetch"><link href="css/chunk-60f5567a.5e78ef39.css" rel="prefetch"><link href="css/chunk-68083412.6c97d65d.css" rel="prefetch"><link href="css/chunk-6a62e4a4.f7b0515d.css" rel="prefetch"><link href="css/chunk-7862274e.d5c9cc82.css" rel="prefetch"><link href="css/chunk-7c663f34.dd4230c4.css" rel="prefetch"><link href="css/chunk-8f5b5230.1bbc0d14.css" rel="prefetch"><link href="css/chunk-ad9a7f36.83565e97.css" rel="prefetch"><link href="css/chunk-b19bdf2e.dc38e70a.css" rel="prefetch"><link href="css/chunk-bde42918.63da8513.css" rel="prefetch"><link href="js/chunk-1ca1c23e.54836802.js" rel="prefetch"><link href="js/chunk-1ef597d7.54836802.js" rel="prefetch"><link href="js/chunk-2551be6e.54836802.js" rel="prefetch"><link href="js/chunk-3af72b24.54836802.js" rel="prefetch"><link href="js/chunk-3c859ab0.54836802.js" rel="prefetch"><link href="js/chunk-3c97ad09.54836802.js" rel="prefetch"><link href="js/chunk-435623e6.54836802.js" rel="prefetch"><link href="js/chunk-566c52d6.54836802.js" rel="prefetch"><link href="js/chunk-58d3fd58.54836802.js" rel="prefetch"><link href="js/chunk-5f32e078.54836802.js" rel="prefetch"><link href="js/chunk-60f5567a.54836802.js" rel="prefetch"><link href="js/chunk-68083412.54836802.js" rel="prefetch"><link href="js/chunk-6a62e4a4.54836802.js" rel="prefetch"><link href="js/chunk-6b3b4ea7.54836802.js" rel="prefetch"><link href="js/chunk-724f7d38.54836802.js" rel="prefetch"><link href="js/chunk-7385558e.54836802.js" rel="prefetch"><link href="js/chunk-7862274e.54836802.js" rel="prefetch"><link href="js/chunk-7c663f34.54836802.js" rel="prefetch"><link href="js/chunk-8f5b5230.54836802.js" rel="prefetch"><link href="js/chunk-ad9a7f36.54836802.js" rel="prefetch"><link href="js/chunk-b19bdf2e.54836802.js" rel="prefetch"><link href="js/chunk-bde42918.54836802.js" rel="prefetch"><link href="css/app.daf9d84b.css" rel="preload" as="style"><link href="css/chunk-vendors.26fe02c0.css" rel="preload" as="style"><link href="js/app.54836802.js" rel="preload" as="script"><link href="js/chunk-vendors.54836802.js" rel="preload" as="script"><link href="css/chunk-vendors.26fe02c0.css" rel="stylesheet"><link href="css/app.daf9d84b.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but metabill doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="js/chunk-vendors.54836802.js"></script><script src="js/app.54836802.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>FlashMall</title>
+  <script type="module" crossorigin src="./static/js/index-2727c6ac.js"></script>
+  <link rel="stylesheet" href="./static/css/style-3a199d21.css">
+</head>
+
+<body class="sm:h-full sm:flex sm:justify--center">
+  <div id="app"
+    class="relative sm:w-[375px] w-full m-auto sm:h-[90%] lg:h-[80%] h-full overflow-hidden md:rounded-xl select-none bg-gradient-to-b from-color1/[1] to-color2 text-sm font-Sans font-medium">
+  </div>
+  
+  <script>
+    // 初始化vConsole
+    const initVConsole = () => {
+      window.vConsole = new window.VConsole({
+        defaultPlugins: ['system', 'network', 'element', 'storage'], // 可以在此设定要默认加载的面板
+        maxLogNumber: 1000,
+        // disableLogScrolling: true,
+        onReady: () => {
+          console.log('vConsole: onReady');
+        },
+        onClearLog: () => {
+          console.log('vConsole: onClearLog');
+        }
+      });
+      console.info('Welcome to vConsole. VConsole is a web front-end developer panel developed by the WeChat front-end team, which can be used to display console logs for easy development and debugging.');
+    };
+    // 引入vConsole的JS库
+    const loadVConsole = () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const v = urlParams.get('v') || 'latest';
+      const script = document.createElement('SCRIPT');
+      script.src = `https://unpkg.com/vconsole@${v}/dist/vconsole.min.js`;
+      script.onload = initVConsole;
+      document.body.append(script);
+    };
+    // loadVConsole();
+
+  </script>
+  <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+  <script>
+    var exports = {}
+    global = globalThis
+    document.addEventListener('touchstart', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault()
+      }
+    })
+    var lastTouchEnd = 0
+    document.addEventListener(
+      'touchend',
+      function (event) {
+        var now = new Date().getTime()
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault()
+        }
+        lastTouchEnd = now
+      },
+      false
+    )
+  </script>
+</body>
+
+</html>
